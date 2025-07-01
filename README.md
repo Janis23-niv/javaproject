@@ -99,15 +99,15 @@ readFromFile();
 
 🧠 Concepts Learned
 
-Working with buffered I/O for improved performance.
+• Working with buffered I/O for improved performance.
 
-Using List<String> to handle and manipulate file lines.
+• Using List<String> to handle and manipulate file lines.
 
-Exception handling with try-catch blocks.
+• Exception handling with try-catch blocks.
 
-Path resolution using java.nio.file.Paths.
+• Path resolution using java.nio.file.Paths.
 
-Real-world simulation of file modifications.
+• Real-world simulation of file modifications.
 
 ✅ Output Example
 
