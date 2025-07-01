@@ -28,35 +28,36 @@ This task uses classes like `BufferedWriter`, `BufferedReader`, and `Files` from
 
 The goal of this task is to create a simple and effective Java program that:
 
-Writes content to a file.
+• Writes content to a file.
 
-Reads and displays the file content.
+• Reads and displays the file content.
 
-Modifies specific content within the file.
+• Modifies specific content within the file.
 
-Reads the updated file to verify the modification.
+• Reads the updated file to verify the modification.
 
 Apply core Java concepts such as:
 
-FileWriter and BufferedWriter for writing files
+• FileWriter and BufferedWriter for writing files
 
-FileReader and BufferedReader for reading files
+• FileReader and BufferedReader for reading files
 
-java.nio.file.Files and Paths for advanced file manipulation
+• java.nio.file.Files and Paths for advanced file manipulation
 
-Ensure clean code structure and proper exception handling
+• Ensure clean code structure and proper exception handling
 
 📌 Technologies Used
 
-Java SE 8+
+ • Java SE 8+
+    
+ • Java I/O (java.io.*)
+    
+ • Java NIO (java.nio.file.*)
+    
+ • Java Collections (java.util.*)
+    
+ • BlueJ IDE (Recommended)
 
-Java I/O (java.io.*)
-
-Java NIO (java.nio.file.*)
-
-Collections (java.util.*)
-
-BlueJ IDE (Recommended for running)
 
 📂 Files & Structure
 
