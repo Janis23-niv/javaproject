@@ -11,11 +11,6 @@ DURATION : 4 WEEKS
 MENTOR : NEELA SANTHOSH
 
 
-💻 CODTECH Java Internship Projects
-
-Welcome to the Java Internship project repository for **CODTECH**. This repository includes **all four mandatory tasks** required to successfully complete the internship. Each task demonstrates a core Java development concept, ranging from file handling and API integration to real-time communication and recommendation systems.
-
-
 📁 Task 1: File Operations
 
 This task demonstrates basic file handling using Java. The program performs three main operations:
