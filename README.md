@@ -13,6 +13,9 @@ MENTOR : NEELA SANTHOSH
 
 📁 Task 1: File Operations
 
+
+This project focuses on developing a basic File Handling Utility using Java. The main objective of this task is to understand and demonstrate core file operations such as writing, reading, and modifying text files using Java I/O and NIO libraries.
+File handling is a fundamental concept in Java that is crucial for many real-world applications such as data processing, configuration management, content manipulation, and persistent storage. This project illustrates these concepts with a simple, well-structured Java program and clear documentation, making it an excellent learning resource for beginners and interns exploring Java development.
 This task demonstrates basic file handling using Java. The program performs three main operations:
 
 1. **Write to a file** – The program writes a predefined message to a text file  named `sample.txt` using `BufferedWriter`.
@@ -21,53 +24,110 @@ This task demonstrates basic file handling using Java. The program performs thre
 
 This task uses classes like `BufferedWriter`, `BufferedReader`, and `Files` from `java.io` and `java.nio.file`. It is designed to help interns understand file creation, reading, and editing in a structured and efficient way.
 
+🎯 Objective
 
-🌐 Task 2: REST API Integration
+The goal of this task is to create a simple and effective Java program that:
 
-In this task, a Java application consumes a **public REST API** to fetch and display structured weather data based on user input. The application uses:
+Writes content to a file.
 
-- `HttpURLConnection` to send an HTTP GET request
-- A public weather API (like OpenWeatherMap)
-- A JSON parser (`org.json` or similar) to interpret the response
-- Displaying relevant information like weather conditions, temperature, and humidity in a structured format
+Reads and displays the file content.
 
-Users are prompted to enter a city name, and the application fetches the corresponding weather conditions, temperature, and humidity. This task demonstrates how to handle HTTP requests and parse JSON in Java.
+Modifies specific content within the file.
 
+Reads the updated file to verify the modification.
 
-📡 Task 3: Client-Server Chat Application
+Apply core Java concepts such as:
 
-This multithreaded chat application allows **multiple clients** to connect and communicate in real-time using Java Sockets. It includes two main components:
+FileWriter and BufferedWriter for writing files
 
-- `Server.java`: Accepts incoming connections and broadcasts messages to all clients.
-- `Client.java`: Connects to the server and sends/receives messages.
+FileReader and BufferedReader for reading files
 
-The server handles each client in a separate thread, demonstrating the use of `Thread` and `Socket` classes. This task builds practical skills in networking and concurrency in Java.
+java.nio.file.Files and Paths for advanced file manipulation
 
-🎯 Task 4: Recommendation System
+Ensure clean code structure and proper exception handling
 
-This task focuses on building a simple recommendation system using **Apache Mahout** and Java. It uses collaborative filtering to suggest items to users based on historical preferences. Key components:
+📌 Technologies Used
 
-- Sample user-item rating dataset
-- Apache Mahout’s `DataModel` and `Recommender` classes
-- Console output showing item recommendations per user
+Java SE 8+
 
-This project introduces machine learning basics through a hands-on recommendation engine and external library integration.
+Java I/O (java.io.*)
 
+Java NIO (java.nio.file.*)
 
-🛠 Technologies Used
+Collections (java.util.*)
 
-- Java SE 8+
-- Java I/O and NIO
-- JSON Parsing (`org.json`)
-- HTTP Networking
-- Java Sockets and Threads
-- Apache Mahout (for recommendation)
-- Maven (for dependency management)
+BlueJ IDE (Recommended for running)
 
+📂 Files & Structure
 
-▶️ How to Run
+FileOperations.java: Main Java source file that contains all the file handling logic.
 
-1. Open any task folder in a Java IDE or terminal.
-2. Compile using: `javac FileName.java`
-3. Run using: `java ClassName`
-4. For API/recommendation tasks, ensure required JAR files are included in the classpath.
+sample.txt: A text file that is dynamically created and modified by the program during runtime.
+
+🔍 Functional Overview
+
+The Java program performs the following operations sequentially:
+
+1. Write to a File
+The program begins by writing a predefined message to a file named sample.txt. It uses BufferedWriter and FileWriter to handle the file-writing process efficiently.
+java
+Copy
+Edit
+writeToFile("Hello, this is the original content.\nThis line will be modified.\n");
+
+2. Read from the File
+It then reads the contents of the file using BufferedReader and FileReader, printing each line to the console. This validates that the file was written successfully.
+java
+Copy
+Edit
+readFromFile();
+
+3. Modify Specific Content
+The program replaces a specific line in the file using Files.readAllLines() to read all lines and then updates the target line using the replaceAll() method. The modified content is then written back using Files.write().
+java
+Copy
+Edit
+modifyFileContent("This line will be modified.", "Done!");
+
+4. Display Modified File Content
+Finally, the modified file is read again to verify and display the updated content.
+java
+Copy
+Edit
+readFromFile();
+
+🧠 Concepts Learned
+
+Working with buffered I/O for improved performance.
+
+Using List<String> to handle and manipulate file lines.
+
+Exception handling with try-catch blocks.
+
+Path resolution using java.nio.file.Paths.
+
+Real-world simulation of file modifications.
+
+✅ Output Example
+
+Original File Content:
+Hello, this is the original content.
+This line will be modified.
+
+Modified File Content:
+Hello, this is the original content.
+Done!
+
+📌 How to Run (Using BlueJ)
+Open BlueJ and create a new project.
+
+Add FileOperations.java to the project.
+
+Compile the class.
+
+Right-click and select void main(String[] args) to run.
+
+Check the console output and the generated sample.txt file.
+
+📢 Conclusion
+This Java file handling utility is a foundational exercise that reinforces basic file operations in Java. It emphasizes clean, readable code, structured output, and real-world use cases. It also sets the stage for more advanced projects involving data parsing, file search, configuration loading, or logging utilities. A must-do for all Java learners looking to build confidence in file I/O.
