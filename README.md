@@ -15,9 +15,9 @@ MENTOR : NEELA SANTHOSH
 
 This task demonstrates basic file handling using Java. The program performs three main operations:
 
-1. **Write to a file** – Adds predefined content into a text file (`sample.txt`).
-2. **Read from the file** – Reads and prints each line to the console.
-3. **Modify file content** – Replaces a specific line in the file with a new string.
+1. **Write to a file** – The program writes a predefined message to a text file  named `sample.txt` using `BufferedWriter`.
+2. **Read from the file** – It reads the content of the file line-by-line using `BufferedReader` and prints it to the console.
+3. **Modify file content** – It searches for a specific string in the file, replaces it with another string, and rewrites the modified content back to the file using `Files.write()`.
 
 This task uses classes like `BufferedWriter`, `BufferedReader`, and `Files` from `java.io` and `java.nio.file`. It is designed to help interns understand file creation, reading, and editing in a structured and efficient way.
 
@@ -29,6 +29,7 @@ In this task, a Java application consumes a **public REST API** to fetch and dis
 - `HttpURLConnection` to send an HTTP GET request
 - A public weather API (like OpenWeatherMap)
 - A JSON parser (`org.json` or similar) to interpret the response
+- Displaying relevant information like weather conditions, temperature, and humidity in a structured format
 
 Users are prompted to enter a city name, and the application fetches the corresponding weather conditions, temperature, and humidity. This task demonstrates how to handle HTTP requests and parse JSON in Java.
 
